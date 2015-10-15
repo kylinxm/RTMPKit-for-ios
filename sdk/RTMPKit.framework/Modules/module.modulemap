@@ -1,0 +1,6 @@
+framework module RTMPKit {
+  umbrella header "RTMPKit.h"
+
+  export *
+  module * { export * }
+}
