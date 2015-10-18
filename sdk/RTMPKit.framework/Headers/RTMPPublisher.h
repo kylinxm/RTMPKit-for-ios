@@ -37,7 +37,6 @@
 {
     @package AudioParam* _audioParam;
     @package VideoParam* _videoRequestParam;
-    @package VideoParam* _cameraParam;
 }
 
 @property (nonatomic) UIView* view;

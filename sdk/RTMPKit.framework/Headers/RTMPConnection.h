@@ -27,7 +27,7 @@
 -(void) setLinkFlag:(int) flag;
 -(void) setLinkTimeout:(int) timeout;
 -(void) enableWrite;
-
+-(void) interrupt;
 -(void) close;
 -(void) destroy;
 
