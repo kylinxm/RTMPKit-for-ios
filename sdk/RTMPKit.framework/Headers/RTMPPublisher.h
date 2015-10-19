@@ -19,6 +19,14 @@
 @class RTMPPublisher;
 
 
+
+typedef NS_ENUM(NSInteger, RTMPOrientation) {
+    RTMPOrientation_Portrait           = 1,
+    RTMPOrientation_PortraitUpsideDown = 2,
+    RTMPOrientation_LandscapeRight     = 3,
+    RTMPOrientation_LandscapeLeft      = 4,
+};
+
 @protocol RTMPPublisherDelegate <NSObject>
 
 @required
@@ -51,6 +59,7 @@
 
 -(void) setAudioParam:(int) sampleRateInHZ bitrate:(int) bitrate;
 -(void) setVideoParam:(int) width height:(int) height frameRate:(int) frameRate bitRate:(int) bitRate;
+-(void) setVideoOrientation:(RTMPOrientation) orientation;
 
 -(void)switchCam;
 -(void) startPreview;
