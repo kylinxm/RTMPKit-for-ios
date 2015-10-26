@@ -42,6 +42,12 @@
 @property (readonly)AudioParam* audioParam; //播放时才有值
 
 
+//设置播放音量 volume 的值在 0-－1 之间
+-(void) setVolume:(float) volume;
+//设置播放缓冲时间
+-(void) setBufferTime:(int) bufferTime;
+
+
 -(void) updatePreviewLayer;//View 改变位置后更新 layer
 
 @end
