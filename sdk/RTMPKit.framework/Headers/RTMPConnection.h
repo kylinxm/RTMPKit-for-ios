@@ -48,10 +48,10 @@
 -(int) readInt24;
 -(int) readInt32;
 -(long long) readInt64;
-
+-(int) read:(char *)buffer count:(int)count;
 -(NSData*) readData:(int) size;
 
-
+@property int lastReadCount;
 @property RTMPConnection *connection;
 @end
 
